@@ -5,21 +5,21 @@
 class Gitdir < Formula
   desc "Download specific directories from GitHub repositories at lightning speed."
   homepage "https://github.com/Ameen-Sha-Cheerangan/GitDir"
-  version "1.1.1"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.1/gitdir_Darwin_x86_64.tar.gz"
-      sha256 "3d6f7502cbb3a5bb135c42192f14825e1b643fdbbc9f3a2211cad50a4f5796f6"
+      url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.2/gitdir_Darwin_x86_64.tar.gz"
+      sha256 "87b93c98ea5b9628690b143f7d18713022740ae117a3693427d995249f4f5e1c"
 
       def install
         bin.install "gitdir"
       end
     end
     on_arm do
-      url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.1/gitdir_Darwin_arm64.tar.gz"
-      sha256 "46d18bc37bc3dcfdf0c26f0ddb9a63a2914a2e59dd72a397977be4c7c5f9ba1e"
+      url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.2/gitdir_Darwin_arm64.tar.gz"
+      sha256 "ae1925698f0a609d94743fe0f1c526e4608cbc08a5f110f847b481bb8ba60d5a"
 
       def install
         bin.install "gitdir"
@@ -30,8 +30,8 @@ class Gitdir < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.1/gitdir_Linux_x86_64.tar.gz"
-        sha256 "c4ca12b8187927ea1afd7cbfbd9fd5042b4280705788031822feeee723b8c505"
+        url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.2/gitdir_Linux_x86_64.tar.gz"
+        sha256 "195e00299504e9ce5beb123143a375664c419688d36f3bd493000a8d462fc6f5"
 
         def install
           bin.install "gitdir"
@@ -40,8 +40,8 @@ class Gitdir < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.1/gitdir_Linux_arm64.tar.gz"
-        sha256 "0aeb44f50138b6de792a26a92293412b947887d1dc8478ceb34e37d5099774db"
+        url "https://github.com/Ameen-Sha-Cheerangan/GitDir/releases/download/v1.1.2/gitdir_Linux_arm64.tar.gz"
+        sha256 "2aa436bd1ab537fbf79eb5bb2a4b8f53ce3ad954089da1dbf2f2b7686639b957"
 
         def install
           bin.install "gitdir"
